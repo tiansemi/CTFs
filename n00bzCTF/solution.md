@@ -10,7 +10,7 @@ ___
  <details>
  <summary>View flag</summary>
  :checkered_flag:
- flag = **n00bz{w3lc0m3_t0_n00bzCTF_2023!}**
+ flag = <b>n00bz{w3lc0m3_t0_n00bzCTF_2023!}</b>
 </details>
  
 ---
@@ -20,7 +20,7 @@ Download "chall.png" file. It is American Sign Language(ASL). Check https://uplo
 <details>
 <summary>View flag</summary>
 :checkered_flag:
-flag = **n00bz{americansignlanguagedecoded}**
+flag = <b>n00bz{americansignlanguagedecoded}</b>
 </details>
 
 ---
@@ -30,7 +30,7 @@ Go to the google form ![google form](https://forms.gle/bMDsajnZusN4XvNa6) or thi
 <details>
 <summary>View flag</summary>
 :checkered_flag:
-flag = **n00bz{1n5p3ct_3l3m3n7_ftw!}**
+flag = <b>n00bz{1n5p3ct_3l3m3n7_ftw!}</b>
 </details>
 
 ---
@@ -51,7 +51,7 @@ Then paste the output in field of site ![periodic element decoder online](https:
 <details>
 <summary>View flag</summary>
 :checkered_flag:
-flag = **n00bz{aeroplane}**
+flag = <b>n00bz{aeroplane}</b>
 </details>
 
 ---
@@ -63,8 +63,8 @@ To get the flag run `cat flag.txt`.
 <details>
 <summary>View flag</summary>
 :checkered_flag:
-flag = **n00bz{blacklist.pop()\_ftw!_7
-a5d2f8b}**
+flag = <b>n00bz{blacklist.pop()\_ftw!_7
+a5d2f8b}</b>
 </details>
 
 ---
@@ -121,8 +121,8 @@ except Exception as e:
 <details>
 <summary>View flag</summary>
 :checkered_flag:
-flag = **n00bz{blacklist.pop()\_ftw!_7
-a5d2f8b}**
+flag = <b>n00bz{blacklist.pop()\_ftw!_7
+a5d2f8b}</b>
 </details>
 
 ---
@@ -132,8 +132,8 @@ The solution was just to change /viewform by /viewanalytics from link. You must 
 <details>
 <summary>View flag</summary>
 :checkered_flag:
-flag = **n00bz{7h1s_1s_th3_3nd_0f_g00g
-l3_f0rm5_fl4g_ch3ck3rs}**
+flag = <b>n00bz{7h1s_1s_th3_3nd_0f_g00g
+l3_f0rm5_fl4g_ch3ck3rs}</b>
 </details>
 
 
@@ -154,8 +154,8 @@ Open flag.pdf file, pass the password found with john and get the flag
 <details>
 <summary>View flag</summary>
 :checkered_flag:
-flag = **n00bz{CR4CK3D_4ND_CR4CK3D_1a4
-d2e5f}**
+flag = <b>n00bz{CR4CK3D_4ND_CR4CK3D_1a4
+d2e5f}</b>
 </details>
 
 
@@ -196,8 +196,8 @@ Run the sciprt and you'll get the flag.
 <details>
 <summary>View flag</summary>
 :checkered_flag:
-flag = **n00bz{7h1s_1s_4_v3ry_l0ng_fl4
-g_s0_th4t_y0u_c4nn0t_s0lv3_7h3_ch4ll3ng3_m4nu4lly_b7w_73s3r4c7_1s_4_v3ry_g00d_t00l!}**
+flag = <b>n00bz{7h1s_1s_4_v3ry_l0ng_fl4
+g_s0_th4t_y0u_c4nn0t_s0lv3_7h3_ch4ll3ng3_m4nu4lly_b7w_73s3r4c7_1s_4_v3ry_g00d_t00l!}</b>
 </details>
 
 ---
@@ -207,8 +207,8 @@ Download 'dump.pcap' file and open it with Wireshark. Then right click on the fi
 <details>
 <summary>View flag</summary>
 :checkered_flag:
-flag = **n00bz{a806fef72a92508b7a64776
-bb83ad4cb}**
+flag = <b>n00bz{a806fef72a92508b7a64776
+bb83ad4cb}</b>
 </details>
 
 ---
@@ -265,8 +265,8 @@ Go to ![Scan QR online](https://qrcodescan.in/) and scan "qrcode.png" image, you
 <details>
 <summary>View flag</summary>
 :checkered_flag:
-flag = **n00bz{qr_c0d3_1n_4_t3xt_f1l3_
-w0w!!!!!!}**
+flag = <b>n00bz{qr_c0d3_1n_4_t3xt_f1l3_
+w0w!!!!!!}</b>
 </details>
 
 ---
@@ -276,8 +276,8 @@ Download "chall.wav" file and open it with qsstv applicaton (**`apt install qsst
 <details>
 <summary>View flag</summary>
 :checkered_flag:
-flag = **n00bz{beep_bop_you_found_me!}**
-</w0w!!!!!!}**>
+flag = <b>n00bz{beep_bop_you_found_me!}</b>
+</w0w!!!!!!}</b>>
 
 ---
 
@@ -286,18 +286,18 @@ Download "chall.wav" file and open a terminal where the file is stored. Run `ste
 <details>
 <summary>View flag</summary>
 :checkered_flag:
-flag = **n00bz{L5B_1n_w4v_f1l3s?!!!}**
+flag = <b>n00bz{L5B_1n_w4v_f1l3s?!!!}</b>
 </details>
 
 ---
 
 ## Mission Moon (OSINT)
 Download the 'mission_moon.webp' file and do reverse search by google search by image (Google lens) ![](./files/pic1.png).
-Import 'mission_moon.webp' file ![](./files/pic2.png) and click on **'view image source'** button ![](./files/pic3.png). Do **Ctrl^F** and research **'jatan.space'** pattern. The first occurrence is supposed to be the correct one ![](https://blog.jatan.space/p/isro-chandrayaan-2-moon-landing-mission). Once the page, you will see that **'Vikram'** is our lander, **'Pragyan'** is our rover, and the planned landing site is **'70.9° S, 22.8° E'**, so *70.9* as latitude and *22.8* as longitude. Putting all this information together, we get **n00bz{Vikram_Pragyan_70.9_22.8}** as flag.
+Import 'mission_moon.webp' file ![](./files/pic2.png) and click on **'view image source'** button ![](./files/pic3.png). Do **Ctrl^F** and research **'jatan.space'** pattern. The first occurrence is supposed to be the correct one ![](https://blog.jatan.space/p/isro-chandrayaan-2-moon-landing-mission). Once the page, you will see that **'Vikram'** is our lander, **'Pragyan'** is our rover, and the planned landing site is **'70.9° S, 22.8° E'**, so *70.9* as latitude and *22.8* as longitude. Putting all this information together, we get <b>n00bz{Vikram_Pragyan_70.9_22.8}</b> as flag.
 <details>
 <summary>View flag</summary>
 :checkered_flag:
-flag = **n00bz{Vikram_Pragyan_70.9_22.8}**
+flag = <b>n00bz{Vikram_Pragyan_70.9_22.8}</b>
 </details>
 
 ---
@@ -307,7 +307,7 @@ Download the 'damn.png' file and do reverse search by google search by image (Go
 <details>
 <summary>View flag</summary>
 :checkered_flag:
-flag = **n00bz{Nova_Kakhovka}**
+flag = <b>n00bz{Nova_Kakhovka}</b>
 </details>
 
 ---
@@ -318,7 +318,7 @@ You can also check ![](https://jp-ch.gq/osint/n00bzCTF-2023.html)
 <details>
 <summary>View flag</summary>
 :checkered_flag:
-flag = **n00bz{Vallejo_Steps}**
+flag = <b>n00bz{Vallejo_Steps}</b>
 </details>
 
 ---
@@ -328,8 +328,8 @@ Search "brayannoob" on github site (![](https://github.com/search?q=brayannoob&t
 <details>
 <summary>View flag</summary>
 :checkered_flag:
-flag = **n00bz{y0u_p4ss3d_th3_ch4ll3ng
-3_c0ngr4tul4t10ns_7c48179d2b7547938409152641cf8e}**
+flag = <b>n00bz{y0u_p4ss3d_th3_ch4ll3ng
+3_c0ngr4tul4t10ns_7c48179d2b7547938409152641cf8e}</b>
 </details>
 
 ---
@@ -339,8 +339,8 @@ Search the username "blackhat_abhinav" on Github and you'll find this instagram 
 <details>
 <summary>View flag</summary>
 :checkered_flag:
-flag = **n00bz{gr0tt4_1sl4nd_1s_4_n1c3
-_pl4c3_t0_v1s1t}**
+flag = <b>n00bz{gr0tt4_1sl4nd_1s_4_n1c3
+_pl4c3_t0_v1s1t}</b>
 </details>
 
 ---
@@ -390,8 +390,8 @@ You can also view this site ![](https://hamzaharooon.medium.com/john-doe-strikes
 <details>
 <summary>View flag</summary>
 :checkered_flag:
-flag = **n00bz{n0_0n3_c4n_3sc4p3_MR.05
-1N7,\_n0t_3v3n_J0HN_D03!}**
+flag = <b>n00bz{n0_0n3_c4n_3sc4p3_MR.05
+1N7,\_n0t_3v3n_J0HN_D03!}</b>
 </details>
 
 ---
@@ -402,8 +402,8 @@ The homepage highlights the word **"radical"** with some css styling, and a butt
 <details>
 <summary>View flag</summary>
 :checkered_flag:
-flag = **n00bz{see_you_in_the_club_act
-ing_real_nice}**
+flag = <b>n00bz{see_you_in_the_club_act
+ing_real_nice}</b>
 </details>
 
 ---
@@ -413,7 +413,7 @@ Go to ![](http://challs.n00bzunit3d.xyz:36083/robots). Add ".txt" to the link to
 <details>
 <summary>View flag</summary>
 :checkered_flag:
-flag = **n00bz{1_f0und_7h3_r0b0ts!}**
+flag = <b>n00bz{1_f0und_7h3_r0b0ts!}</b>
 </details>
 
 ---
@@ -462,6 +462,6 @@ strings chal | grep n00bz
 <details>
 <summary>View flag</summary>
 :checkered_flag: 
-flag = **n00bz{N3v3R_$torE_$ENs1TIV3_1
-nFOrMa7IOn_P1aiNtexT_In_yoUr_bin4rI3S!!!!!}**
+flag = <b>n00bz{N3v3R_$torE_$ENs1TIV3_1
+nFOrMa7IOn_P1aiNtexT_In_yoUr_bin4rI3S!!!!!}</b>
 </details>
