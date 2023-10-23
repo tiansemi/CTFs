@@ -1,6 +1,5 @@
 # n00bzCTF write-up
-##### @author : tiansemi@outlook.com
-
+##### @author : moulooholo@gmail.com
 ___
 ---
 ---
@@ -8,25 +7,31 @@ ___
 
 ## Sanity check (Misc)
  Go to ![n00bzCTF's rules](https://ctf.n00bzunit3d.xyz/rules), ,and check the page source. Search all strings begin by "n00b{", you will find the flag.
- 
- :checkered_flag:{toggle}
+ <details>
+ <summary>View flag</summary>
+ :checkered_flag:
  flag = **n00bz{w3lc0m3_t0_n00bzCTF_2023!}**
+</details>
  
 ---
 
 ## Amazing Song Lyrics (Misc)
 Download "chall.png" file. It is American Sign Language(ASL). Check https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Asl_alphabet_gallaudet.svg/424px-Asl_alphabet_gallaudet.svg.png and decode chall.png to get flag (you can use this link ![ASL decoder](https://www.dcode.fr/american-sign-language).
-
-:checkered_flag:{toggle}
+<details>
+<summary>View flag</summary>
+:checkered_flag:
 flag = **n00bz{americansignlanguagedecoded}**
+</details>
 
 ---
 
 ## Google Form 1 (Misc)
 Go to the google form ![google form](https://forms.gle/bMDsajnZusN4XvNa6) or this ![google form](https://docs.google.com/forms/d/e/1FAIpQLScu-EQD_7Kc1aF1FaHxX0JHypbWbd5oLy513nm9Prsdo6c7Dg/viewform), and check the page source. Search all strings begin by "n00b{", you will find the flag.
-
-:checkered_flag:{toggle}
+<details>
+<summary>View flag</summary>
+:checkered_flag:
 flag = **n00bz{1n5p3ct_3l3m3n7_ftw!}**
+</details>
 
 ---
 
@@ -43,9 +48,11 @@ sep=sep[1:]
 print(sep)
 ```
 Then paste the output in field of site ![periodic element decoder online](https://www.dcode.fr/atomic-number-substitution), and decrypt. You obtained a string paste it into field of site ![english google translator](https://translate.google.com/?sl=en&tl=fr&op=translate). In above, it show you the correct spelling. 
-
-:checkered_flag:{toggle}
+<details>
+<summary>View flag</summary>
+:checkered_flag:
 flag = **n00bz{aeroplane}**
+</details>
 
 ---
 
@@ -53,9 +60,12 @@ flag = **n00bz{aeroplane}**
 Connect to the server with `nc challs.n00bzunit3d.xyz 8412`. We see that there is a blacklist which prevents us from certain orders. To bypass that, we'll use unicode character ![Small p letter](https://www.compart.com/en/unicode/U+2093). So in python console run `print("\u2093")`, and replace the **'x'** of **'exec'** by the output. 
 You must get `eₓec(input())` to pass into server. Then, entry `import pty; pty.spawn("/usr/bin/sh")`. You'll get a shell prompt, now you'll do everythings according ctf user.
 To get the flag run `cat flag.txt`. 
-
-:checkered_flag:{toggle}
-flag = **n00bz{blacklist.pop()\_ftw!_7a5d2f8b}**
+<details>
+<summary>View flag</summary>
+:checkered_flag:
+flag = **n00bz{blacklist.pop()\_ftw!_7
+a5d2f8b}**
+</details>
 
 ---
 
@@ -108,17 +118,23 @@ try:
 except Exception as e:
 	print("Error:", str(e))
 ```
+<details>
+<summary>View flag</summary>
+:checkered_flag:
+flag = **n00bz{blacklist.pop()\_ftw!_7
+a5d2f8b}**
+</details>
 
-:checkered_flag:{toggle}
-flag = **n00bz{blacklist.pop()\_ftw!_7a5d2f8b}**
- 
 ---
 
 ## Google Form 2 (Misc)
 The solution was just to change /viewform by /viewanalytics from link. You must get : ![](https://docs.google.com/forms/d/e/1FAIpQLSd9-GMq2s_HTEE0Wv3UL2sNo3DSg1UBpyacOmoCZYuEymBAxw/viewanalytics)
-
-:checkered_flag:{toggle}
-flag = **n00bz{7h1s_1s_th3_3nd_0f_g00gl3_f0rm5_fl4g_ch3ck3rs}**
+<details>
+<summary>View flag</summary>
+:checkered_flag:
+flag = **n00bz{7h1s_1s_th3_3nd_0f_g00g
+l3_f0rm5_fl4g_ch3ck3rs}**
+</details>
 
 
 ---
@@ -135,9 +151,12 @@ pdf2john flag.pdf >hash2
 john hash2 -w=/usr/share/wordlists/rockyou.txt
 ```
 Open flag.pdf file, pass the password found with john and get the flag
-
-:checkered_flag:{toggle}
-flag = **n00bz{CR4CK3D_4ND_CR4CK3D_1a4d2e5f}**
+<details>
+<summary>View flag</summary>
+:checkered_flag:
+flag = **n00bz{CR4CK3D_4ND_CR4CK3D_1a4
+d2e5f}**
+</details>
 
 
 ## Avengers (Forensic)
@@ -174,17 +193,23 @@ for i in range(len(liste)):
 	print(chr(int(liste[i])),end='')
 ```
 Run the sciprt and you'll get the flag.
-
-:checkered_flag:{toggle}
-flag = **n00bz{7h1s_1s_4_v3ry_l0ng_fl4g_s0_th4t_y0u_c4nn0t_s0lv3_7h3_ch4ll3ng3_m4nu4lly_b7w_73s3r4c7_1s_4_v3ry_g00d_t00l!}**
+<details>
+<summary>View flag</summary>
+:checkered_flag:
+flag = **n00bz{7h1s_1s_4_v3ry_l0ng_fl4
+g_s0_th4t_y0u_c4nn0t_s0lv3_7h3_ch4ll3ng3_m4nu4lly_b7w_73s3r4c7_1s_4_v3ry_g00d_t00l!}**
+</details>
 
 ---
 
 ## Hecked (Forensic)
 Download 'dump.pcap' file and open it with Wireshark. Then right click on the first packet and select **"Follow > TCP Stream"**. You'll find the Name and version of vulnerable service. Go to the 4th stream to get the first command typed by hacker. In resume, you must run `echo -n 'vsFTPd_2.3.4_id' |md5sum |cut -d' ' -f1`. Copy the output and put it in flag format. That give **"n00bz{a806fef72a92508b7a64776bb83ad4cb}"**.
-
-:checkered_flag:{toggle}
-flag = **n00bz{a806fef72a92508b7a64776bb83ad4cb}**
+<details>
+<summary>View flag</summary>
+:checkered_flag:
+flag = **n00bz{a806fef72a92508b7a64776
+bb83ad4cb}**
+</details>
 
 ---
 
@@ -237,67 +262,86 @@ image.save("qrcode.png")  # Save the image
 image.show()  # Display the image
 ```
 Go to ![Scan QR online](https://qrcodescan.in/) and scan "qrcode.png" image, you'll get the flag.
-
-:checkered_flag:{toggle}
-flag = **n00bz{qr_c0d3_1n_4_t3xt_f1l3_w0w!!!!!!}**
+<details>
+<summary>View flag</summary>
+:checkered_flag:
+flag = **n00bz{qr_c0d3_1n_4_t3xt_f1l3_
+w0w!!!!!!}**
+</details>
 
 ---
 
 ## BeepBop (Forensic)
 Download "chall.wav" file and open it with qsstv applicaton (**`apt install qsstv`** on Debian distribution). Then, you will get the flag in **"Receive"** tab.
-
-:checkered_flag:{toggle}
+<details>
+<summary>View flag</summary>
+:checkered_flag:
 flag = **n00bz{beep_bop_you_found_me!}**
+</w0w!!!!!!}**>
 
 ---
 
 ## LSB (Forensic)
 Download "chall.wav" file and open a terminal where the file is stored. Run `stegolsb wavesteg -ri chall.wav -o flag.txt -b 30` to get the flag. You can download the command with `python3 -m pip install stego-lsb`
-
-:checkered_flag:{toggle}
+<details>
+<summary>View flag</summary>
+:checkered_flag:
 flag = **n00bz{L5B_1n_w4v_f1l3s?!!!}**
+</details>
 
 ---
 
 ## Mission Moon (OSINT)
 Download the 'mission_moon.webp' file and do reverse search by google search by image (Google lens) ![](./files/pic1.png).
 Import 'mission_moon.webp' file ![](./files/pic2.png) and click on **'view image source'** button ![](./files/pic3.png). Do **Ctrl^F** and research **'jatan.space'** pattern. The first occurrence is supposed to be the correct one ![](https://blog.jatan.space/p/isro-chandrayaan-2-moon-landing-mission). Once the page, you will see that **'Vikram'** is our lander, **'Pragyan'** is our rover, and the planned landing site is **'70.9° S, 22.8° E'**, so *70.9* as latitude and *22.8* as longitude. Putting all this information together, we get **n00bz{Vikram_Pragyan_70.9_22.8}** as flag.
-
-:checkered_flag:{toggle}
+<details>
+<summary>View flag</summary>
+:checkered_flag:
 flag = **n00bz{Vikram_Pragyan_70.9_22.8}**
+</details>
 
 ---
 
 ## Damn (OSINT)
 Download the 'damn.png' file and do reverse search by google search by image (Google lens). Click on **'view image source'** button ![](./files/pic3.png). The first occurrence is supposed to be the correct one ![](https://www.levif.be/o/agence-internationale-de-lenergie-atomique/). Once the page, you'll see that the full name is Nova Kakhovka. Therefore the flag is n00bz{Nova_Kakhovka}
-
-:checkered_flag:{toggle}
+<details>
+<summary>View flag</summary>
+:checkered_flag:
 flag = **n00bz{Nova_Kakhovka}**
+</details>
 
 ---
 
 ## Lost (OSINT)
 Download "where.png" file and open it. when you zoom it, you'll see a brigde. Search with google lens, zoom on the brigde. According to google suggestions, the image seems to have been taken at **Vallejo Street Pier 9**. But after several attempts, the good name for this challenge is Vallejo Steps (obtained from Google Maps)
 You can also check ![](https://jp-ch.gq/osint/n00bzCTF-2023.html)
-
-:checkered_flag:{toggle}
+<details>
+<summary>View flag</summary>
+:checkered_flag:
 flag = **n00bz{Vallejo_Steps}**
+</details>
 
 ---
 
 ## Try to hack me (OSINT)
 Search "brayannoob" on github site (![](https://github.com/search?q=brayannoob&type=users)). You'll see a single user. Go to his first commit on the "BrayanResearch" repository, you will see a username. Search this username on tryhackme with this link ![](https://tryhackme.com/p/brayan234). And you get the flag.
-
-:checkered_flag:{toggle}
-flag = **n00bz{y0u_p4ss3d_th3_ch4ll3ng3_c0ngr4tul4t10ns_7c48179d2b7547938409152641cf8e}**
+<details>
+<summary>View flag</summary>
+:checkered_flag:
+flag = **n00bz{y0u_p4ss3d_th3_ch4ll3ng
+3_c0ngr4tul4t10ns_7c48179d2b7547938409152641cf8e}**
+</details>
 
 ---
 
 ## The online Odyssey (OSINT)
 Search the username "blackhat_abhinav" on Github and you'll find this instagram link ![](https://www.instagram.com/blackhat_abhinav/). Copy and paste the secret link in url bar. You'll find in google map page a username which used on Twitter ![](https://twitter.com/Abhinav78082932). Click on "ALT" on first image, and you get the flag.
-
-:checkered_flag:{toggle}
-flag = **n00bz{gr0tt4_1sl4nd_1s_4_n1c3_pl4c3_t0_v1s1t}**
+<details>
+<summary>View flag</summary>
+:checkered_flag:
+flag = **n00bz{gr0tt4_1sl4nd_1s_4_n1c3
+_pl4c3_t0_v1s1t}**
+</details>
 
 ---
 
@@ -343,26 +387,34 @@ print(ciphertext.decode('utf-8'))
 ```
 
 You can also view this site ![](https://hamzaharooon.medium.com/john-doe-strikes-again-n00bzctf-osint-d2122d54c508)
-
-:checkered_flag:{toggle}
-flag = **n00bz{n0_0n3_c4n_3sc4p3_MR.051N7,\_n0t_3v3n_J0HN_D03!}**
+<details>
+<summary>View flag</summary>
+:checkered_flag:
+flag = **n00bz{n0_0n3_c4n_3sc4p3_MR.05
+1N7,\_n0t_3v3n_J0HN_D03!}**
+</details>
 
 ---
 
 ## Club_N00b (Web)
 Go to ![](http://challs.n00bzunit3d.xyz:8080/).
 The homepage highlights the word **"radical"** with some css styling, and a button. Clicking the button **"Check Status""** you go to `/check?secret_phrase=nope` page. Change **"nope"** to **"radical"** to get the flag.
-
-:checkered_flag:{toggle}
-flag = **n00bz{see_you_in_the_club_acting_real_nice}**
+<details>
+<summary>View flag</summary>
+:checkered_flag:
+flag = **n00bz{see_you_in_the_club_act
+ing_real_nice}**
+</details>
 
 ---
 
 ## Robots (Web)
 Go to ![](http://challs.n00bzunit3d.xyz:36083/robots). Add ".txt" to the link to get the flag.
-
-:checkered_flag:{toggle}
+<details>
+<summary>View flag</summary>
+:checkered_flag:
 flag = **n00bz{1_f0und_7h3_r0b0ts!}**
+</details>
 
 ---
 
@@ -387,6 +439,19 @@ flag = **n00bz{1_f0und_7h3_r0b0ts!}**
 ---
 
 
+
+##
+
+
+---
+
+
+
+##
+
+
+---
+
 ## Welcome (Rev)
 Download 'chal' file and do on the terminal :
 ```
@@ -394,7 +459,9 @@ cd <chal_directory's_path>
 file chal
 strings chal | grep n00bz
 ```
-
-:checkered_flag:{toggle}
-flag = **n00bz{N3v3R_$torE_$ENs1TIV3_1nFOrMa7IOn_P1aiNtexT_In_yoUr_bin4rI3S!!!!!}**
-
+<details>
+<summary>View flag</summary>
+:checkered_flag: 
+flag = **n00bz{N3v3R_$torE_$ENs1TIV3_1
+nFOrMa7IOn_P1aiNtexT_In_yoUr_bin4rI3S!!!!!}**
+</details>
