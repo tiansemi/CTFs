@@ -1,4 +1,5 @@
 @site : http://ctf-spcs.mf.grsu.by/
+
 @author : Moulo
 
 # Homomorphic weak - crypto / misc
@@ -147,6 +148,7 @@ def main():
 if __name__ == "__main__":
     main()
 ```
+grodno{bd9890435442404854572843420932985432f5efb}
 
 # ZKP 9+ - Misc / ZKP
 Using the Schnorr scheme for a zero-knowledge proof protocol (ZKP), prove that you can find the discrete logarithm without revealing the secret of how you do it.
@@ -221,6 +223,7 @@ if __name__ == "__main__":
     solve()
 
 ```
+grodno{2d809033a9248bc375df6e7cef9ef1}
 
 # Error, another error ...  Misc / Crypto / Coding
 My smart server stopped correcting data errors. Although before it could find a bad bit in a 7-bit block. Help!
@@ -230,8 +233,41 @@ Downloads : chall_9057.py
 
 ## Solution
 ```
+# -*- coding: utf-8 -*-
 
+from pwn import remote
+
+# Pré-calcule lookup 7-bits → "r:data_bits"
+M = {}
+for i in range(128):
+    c = format(i, '07b')
+    b = list(map(int, c))
+    s1 = b[0] ^ b[2] ^ b[4] ^ b[6]
+    s2 = b[1] ^ b[2] ^ b[5] ^ b[6]
+    s3 = b[3] ^ b[4] ^ b[5] ^ b[6]
+    synd = (s3 << 2) | (s2 << 1) | s1
+    r = 0 if synd == 0 else synd - 1
+    if synd:
+        b[r] ^= 1
+    db = ''.join(str(b[j]) for j in (2, 4, 5, 6))
+    M[c] = f"{r}:{db}"
+
+conn = remote("ctf.mf.grsu.by", 9057)
+conn.recvuntil(b"Rounds: 20\n\n")
+
+for _ in range(20):
+    print(_)
+    buf = conn.recvuntil(b">>")
+    if _ >= 9: code=buf[18:25].decode()
+    else: code = buf[17:24].decode()
+    conn.sendline(M[code].encode())
+    conn.recvline()
+
+print(conn.recvall())
+conn.close()
 ```
+grodno{bd779087065823014824124712214240358340ff2ef1}
+
 
 # 
 
@@ -270,14 +306,21 @@ Downloads : chall_9057.py
 
 # 
 
-## Solution
+## Solution (not true
 ```
 
 ```
 
-# 
 
-## Solution
+# My favorite reindeer - beginner / misc
+Santa Claus traditionally has eight reindeer, first mentioned in the poem "The Night Before Christmas" (1823) by Clement Clarke Moore. Dasher, Dancer, Prancer, Vixen, Comet, Cupid, Donner. Later, in the popular song "Rudolph the Red-Nosed Reindeer" (1949), they were joined by a ninth reindeer. Rudolph.
+
+And what are the names of my two favorite reindeer? I coded their names. Twice, in fact. You never know - the Northern Lights, Magnetic Storms, Solar Flares ...
+
+Answer in the form grodno{Name1;Name2}
+
+Downloads : 2Reindeers.py 2Reindeers.txt
+## Solution 
 ```
 
 ```
