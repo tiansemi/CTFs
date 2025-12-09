@@ -25,3 +25,22 @@
 
    * Ce qui donne :
      **`csd{W3lc0m3_8aCK_70_adv3N7_2025}`**
+
+
+# The First Strike
+
+### Attachments : Download [ftpchal.pcap](./ftpchal.pcap)
+
+### Writeup : Download [ftpchal.py](./ftpchal.py)
+
+##### 🔍 *Étapes (pour comprendre le challenge)*
+
+   * Open file with Wireshark
+   * Recherche google .  :
+     `what is the ftp response code for user logged in`
+   * Dans Wireshark filtrer "ftp.response.code == 230".
+   * Click droit sur le paquet, puis follow "TCP stream" :
+   * Ce qui donne :
+     **`csd{Elf67_snowball}`**
+
+
