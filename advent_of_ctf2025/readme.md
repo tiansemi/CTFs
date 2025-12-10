@@ -1,8 +1,8 @@
 # The Mission Begins
 
-### Attachments : Download [start.txt](./start.txt)
+### Attachments : Download [start.txt](assets/start.txt)
 
-### Writeup : Download [start.py](./start.py)
+### Writeup : Download [start.py](assets/start.py)
 
 ##### 🔍 *Étapes du décodage (pour comprendre le challenge)*
 
@@ -29,9 +29,9 @@
 
 # The First Strike
 
-### Attachments : Download [ftpchal.pcap](./ftpchal.pcap)
+### Attachments : Download [ftpchal.pcap](assets/ftpchal.pcap)
 
-### Writeup : Download [ftpchal.py](./ftpchal.py)
+### Writeup : Download [ftpchal.py](assets/ftpchal.py)
 
 ##### 🔍 *Étapes (pour comprendre le challenge)*
 
@@ -42,5 +42,40 @@
    * Click droit sur le paquet, puis follow "TCP stream" :
    * Ce qui donne :
      **`csd{Elf67_snowball}`**
+
+
+# The Elf's Wager
+
+### Attachments : Download [day4](assets/day4)
+
+### Writeup : Download [the_Elfs_Wager.py](assets/the_Elfs_Wager.py)
+
+##### 🔍 *Étapes (pour comprendre le challenge)*
+
+   * Open file with radare2 :
+     ```
+     r2 assets/day4
+     aaa
+     afl
+     s main
+     pdd
+     s fcn.00001362
+     pdd
+     iz | grep "!1&9s"
+     px 23 @ 0x00002110
+     ```
+     If px 23 @ 0x00002110 showed:
+     `0x402010  21 31 26 39 73 2c 36 72 5f 3a 78 6b 11 55 99 aa bb cc dd ee ff 00 11 22`
+     You would replace HEXBYTES with 21312639732c36725f3a786b115599aabbccddeeff001122 and run the Python snippet which prints the flag.
+   * Après les commandes `s main` et `pdd` envoyé la sortie à chatgpt pour compréhension du code. 
+   * Après les commandes `s fcn.00001362` et `pdd` envoyé la sortie à chatgpt pour compréhension du code.
+   * In python console  :
+     ```
+     b = bytes.fromhex(hexbytes)
+     secret = ''.join(chr(x ^ 0x42) for x in b)
+     print(secret)
+     ```
+   * Ce qui donne :
+     **`csd{1nt0_th3_m41nfr4m3}`**
 
 
