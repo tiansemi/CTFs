@@ -1,3 +1,5 @@
+## see https://medium.com/@amreid537/cyberstudents-advent-of-ctf-2025-write-up-day-1-day-25-d472899b2fca#4197
+
 # The Mission Begins
 
 ### Attachments : Download [start.txt](assets/start.txt)
