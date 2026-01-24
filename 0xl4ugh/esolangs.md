@@ -2,7 +2,7 @@
 
 ## 1. Analyse Initiale
 
-Le challenge nous fournit un fichier nommé `arch.archbtw`. La commande `file` nous indique qu'il s'agit d'un fichier texte ASCII avec de très longues lignes.
+Le challenge nous fournit un fichier nommé [arch.archbtw](arch.archbtw)`. La commande `file` nous indique qu'il s'agit d'un fichier texte ASCII avec de très longues lignes.
 
 À l'ouverture du fichier, nous découvrons un texte répétitif composé uniquement de quelques mots-clés :
 
@@ -63,7 +63,7 @@ Puisque le fichier contient des centaines d'instructions, une traduction manuell
 2. Simuler une machine de Turing (ruban de mémoire et pointeur).
 3. Interpréter les boucles imbriquées.
 
-**Script utilisé :** (voir le script Python fourni précédemment).
+**Script utilisé :** (voir le script Python [solve.py](solve.py)).
 
 ## 5. Résultat
 
