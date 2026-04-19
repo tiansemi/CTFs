@@ -13,3 +13,5 @@ _by tiansemi@outlook.com
 - https://hexed.it/ : for edit and view file from raw format in hexadeimal digit
 - https://sisik.eu/apk-tool : apk analyze
 - https://www.dcode.fr/cipher-identifier : for crypto check
+- https://dogbolt.org/ : Decompiler online - reversing
+- https://app.codeconvert.ai/code-converter : Source code Converter online 
