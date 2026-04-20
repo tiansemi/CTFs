@@ -1,11 +1,19 @@
 # CTFs
 
-
 ### Welcome ! Find here, some ctf writes up.
-
 
 _by tiansemi@outlook.com
 
+# Utils Python Code
+
+### 1. Extract text from pdf file
+
+```
+!pip install pdfminer.six
+from pdfminer.high_level import extract_text
+file_path='incident_report.pdf'
+print(f"==== Extrated Text ===\n\n{extract_text(file_path)}")
+```
 
 # Utils links:
 
