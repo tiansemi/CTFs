@@ -22,4 +22,5 @@ print(f"==== Extrated Text ===\n\n{extract_text(file_path)}")
 - https://sisik.eu/apk-tool : apk analyze
 - https://www.dcode.fr/cipher-identifier : for crypto check
 - https://dogbolt.org/ : Decompiler online - reversing
-- https://app.codeconvert.ai/code-converter : Source code Converter online 
+- https://app.codeconvert.ai/code-converter : Source code Converter online
+- https://wavacity.com/ : Steganography wav audio file - audacity online
